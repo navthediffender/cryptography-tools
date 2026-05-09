@@ -22,8 +22,7 @@ Then enter a message when prompted.
 
 Enter a message to encode: hello
 
-Encoded message:
-wtaad
+Encoded message: wtaad
 
 ## Skills demonstrated
 
