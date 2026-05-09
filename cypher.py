@@ -11,40 +11,35 @@ def encode_message(message):
     encoded = ""
 
     for ch in message:
-        # Case 1: lowercase letter
+        # Lowercase letters
         if ch.islower():
             new_code = ord(ch) + shift
 
-            # Wrap around if we go past 'z'
-            if new_code > ord('z'):
+            if new_code > ord("z"):
                 new_code -= 26
 
             encoded += chr(new_code)
 
-        # Case 2: uppercase letter
+        # Uppercase letters
         elif ch.isupper():
             new_code = ord(ch) + shift
 
-            # Wrap around if we go past 'Z'
-            if new_code > ord('Z'):
+            if new_code > ord("Z"):
                 new_code -= 26
 
             encoded += chr(new_code)
 
-        # Case 3: not a letter (space, punctuation, numbers, etc.)
+        # Spaces, punctuation, numbers
         else:
             encoded += ch
 
     return encoded
 
 
-# -------------------- Main program --------------------
-# Get input from the user
+# Main program
 user_message = input("Enter a message to encode: ")
 
-# Encode the message
 result = encode_message(user_message)
 
-# Display the result clearly
 print("\nEncoded message:")
 print(result)
