@@ -6,30 +6,24 @@ A beginner-friendly Python project that encodes messages using a Caesar cipher.
 
 This tool shifts each letter in a message by 15 positions in the alphabet.
 
-Example:
-
-```text
-hello → wtaad
-```
+Example: hello → wtaad
 
 Spaces, punctuation, and numbers are kept unchanged.
 
 ## How to run
 
-```bash
+Run this command in Terminal:
+
 python3 cipher.py
-```
 
 Then enter a message when prompted.
 
 ## Example output
 
-```text
 Enter a message to encode: hello
 
 Encoded message:
 wtaad
-```
 
 ## Skills demonstrated
 
@@ -37,7 +31,7 @@ wtaad
 - Loops
 - Conditional logic
 - String handling
-- ASCII character conversion using `ord()` and `chr()`
+- ASCII character conversion using ord() and chr()
 - Basic cryptography concept: Caesar cipher
 
 ## Why I built this
